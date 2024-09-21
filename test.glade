@@ -2,47 +2,103 @@
 <!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
-  <object class="GtkWindow" id="Main_window">
+  <object class="GtkWindow" id="root">
     <property name="can-focus">False</property>
     <child>
-      <!-- n-columns=3 n-rows=3 -->
+      <!-- n-columns=2 n-rows=1 -->
       <object class="GtkGrid">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
+        <property name="row-homogeneous">True</property>
+        <property name="column-homogeneous">True</property>
         <child>
           <object class="GtkImage">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="pixbuf">public/img/test.jpg</property>
+            <property name="pixbuf">../../Изображения/Без имени.jpg</property>
           </object>
           <packing>
-            <property name="left-attach">2</property>
+            <property name="left-attach">0</property>
             <property name="top-attach">0</property>
           </packing>
         </child>
         <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
+          <!-- n-columns=1 n-rows=6 -->
+          <object class="GtkGrid">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="row-homogeneous">True</property>
+            <property name="column-homogeneous">True</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">../../Загрузки/Group 2.svg</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="primary-icon-tooltip-text" translatable="yes">E-mail</property>
+                <property name="secondary-icon-tooltip-text" translatable="yes">E-mail</property>
+                <property name="placeholder-text" translatable="yes">Email</property>
+                <property name="input-purpose">email</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="primary-icon-tooltip-text" translatable="yes">Password</property>
+                <property name="placeholder-text" translatable="yes">Password</property>
+                <property name="input-purpose">password</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Submit</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Newbie?</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+          </packing>
         </child>
       </object>
     </child>

@@ -35,7 +35,7 @@ int main(int argc, char * argv[]) {
     //Теперь получаем виджет из Builder
     // Помните мы указывали ID? Вот по нему мы и ищем нужный
     // В данном случае ищем виджет окна
-    GtkWidget * window = GTK_WIDGET(gtk_builder_get_object(ui_builder, "Main_window"));
+    GtkWidget * window = GTK_WIDGET(gtk_builder_get_object(ui_builder, "root    "));
 
     //Таким же образом можно получить и другие виджеты
     // но нам они не понадобятся
